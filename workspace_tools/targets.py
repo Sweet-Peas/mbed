@@ -69,18 +69,17 @@ class Target:
 
     def init_hooks(self, hook, toolchain_name):
         pass
-##WIZnet
+
+### WIZnet ###
 
 class WIZwiki_W7500(Target):
     def __init__(self):
         Target.__init__(self)
         self.core = "Cortex-M0"
         self.extra_labels = ['WIZNET', 'W7500x', 'WIZwiki_W7500']
-        self.supported_toolchains = ["uARM", "ARM"]
+        self.supported_toolchains = ["uARM", "ARM", "GCC_ARM"]
         self.default_toolchain = "ARM"
         self.supported_form_factors = ["ARDUINO"]
-        
-        
         
 ### NXP ###
 
